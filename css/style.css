@@ -1,0 +1,10 @@
+nav img {
+    max-height: 50px;
+}
+
+@media ( min-width:992px) {
+    nav .collapse {
+        display: flex;
+        justify-content: end;
+    }    
+}
