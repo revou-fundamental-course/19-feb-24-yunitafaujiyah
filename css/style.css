@@ -2,9 +2,94 @@ nav img {
     max-height: 50px;
 }
 
-@media ( min-width:992px) {
+section.landing {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -700px;
+    background-image: url("https://images.unsplash.com/photo-1629032619752-594d21dfabd2?w=2000");
+}
+
+section.profile {
+    height: auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.content {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content p {
+    text-align: center;
+    width: 70%;
+}
+
+.message-us.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.submit-form {
+    width: 100%;
+}
+
+.submit-form form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.target-form {
+    width: 100%;
+}
+
+.target-form form {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+@media (min-width:992px) {
     nav .collapse {
         display: flex;
         justify-content: end;
-    }    
+    }
+
+    section.landing {
+        height: 700px;
+    }
+
+    section.profile {
+        height: 600px;
+    }
+
+    .content p {
+        width: auto;
+    }
+
+    .profile-content {
+        flex-direction: row;
+    }
+
+    .message-us.wrapper {
+        flex-direction: row;
+    }
 }
